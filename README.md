@@ -1,5 +1,5 @@
 # Doc-Scanner
-Converts physical docs to digital ones
+CamScanner but for PC
 
 requirements : 
   python3
