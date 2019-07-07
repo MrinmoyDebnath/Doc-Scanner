@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Upload Image</title>
+  </head>
+  <body>
+	<center>
+    {% if msg %}
+    <h1>{{ msg }}</h1>
+    {% endif %}
+    
+    <h1>Upload new File</h1>
+    
+    <form method=post enctype=multipart/form-data>
+      <p><input type=file name=file>
+         <input type=submit value=Upload>
+    </form>
+
+    <h1>Result:</h1>
+    {% if img_src %}
+      <img src="{{ img_src }}">
+    {% endif %}
+    
+    {% if new_src %}
+      <p> The converted image is : <br><br></p>
+	<img src = "{{ new_src }}">
+    {% else %}
+      The image result will be displayed here<br>
+    {% endif %}
+	</center>
+  </body>
+</html>
+    
